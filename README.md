@@ -8,10 +8,19 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.51.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.51.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.52.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.52.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.51 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.51.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前预览版：[1.52 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.52.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.52 更新
+
+- 水文识图并发默认8，可自行设置1～16；暂停只停止后续照片，在途请求完成后保存。
+- GLM 5.3 自动使用low思考强度，修复关闭思考导致的400错误；支持流式响应，修复安卓末尾换行处理，等待上限可调。
+- 水文同步按共同基线与字段合并，空闲电脑不产生本机修改；上传回执丢失时自动确认相同内容。照片仅保存在本机，云端只同步结果。
+- 按层、按回次添加RQD默认3个岩芯段输入框，只填1个也可保存。
+
+手机和电脑请一起更新。此版本无需再次执行云端SQL脚本。识别成功不代表数字全部正确，导出前仍需核对模糊标记、回次行数和孔深连续性。
 
 ## 水文报表导入（1.50新增）
 
