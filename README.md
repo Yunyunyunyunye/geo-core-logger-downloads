@@ -8,10 +8,20 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.52.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.52.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.53.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.53.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.52 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.52.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前预览版：[1.53 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.53.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.53 更新与Excel校对
+
+- 水文支持“导出本孔Excel → 在Excel修改 → 导入Excel校对结果”。保留隐藏记录ID和校对信息，整行排序；改孔深仍更新原行，不重复新增。导入前确认更新与新增数量，确认期间数据变化会阻止覆盖。Excel删行不会删除软件已有记录。
+- 水位列纠正为“提钻后、下钻前”，升降自动计算“提钻后－下钻前”，任一为空则留空，负值保留。历史数值不交换，旧版Excel按旧列的实际含义转换。
+- 单位进尺/时间消耗量在原值除以1000后四舍五入保留两位；导入时直接读取表中数值，不再除1000。未改的显示值回导会保留原始识别精度。
+- RQD页可直接导入软件导出的长度表，自动读取“按层”“按回次”两张表。单位米换算一次，保留进尺与孔深；合计未改时保留原岩芯段明细。多条拆分记录的合计被修改时会明确提示，避免猜测分摊。
+- 新增“删除本孔全部水文结果”：确认孔号/条数后再输入孔号确认；只同步删除该孔结果，其他孔和本机照片保留。
+
+手机与电脑请一起更新，无需运行新的云端SQL。建议更新前分别导出编录JSON和水文JSON备份。
 
 ## 1.52 更新
 
