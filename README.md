@@ -8,15 +8,16 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.50.0-x64-nsis.exe` | 安装版，可选择安装目录、创建桌面快捷方式 |
-| Windows 10/11，64 位 | `geo-core-logger-1.50.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.50.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.51.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.51.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.50 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.50.0-beta.1)。安装后无需另装Python、Node.js等开发环境。
+当前预览版：[1.51 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.51.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
 
 ## 水文报表导入（1.50新增）
 
 手机和电脑都可选照片识图。先选钻孔编号，再在“模型设置”填写自己的视觉模型接口地址、模型名和API Key，保存后添加照片并开始。不同孔照片分批选择，例如ZK001、ZK002；同一孔的多张照片结果按孔深统一排序。
+
+1.51起，先填接口地址和自己的Key，点击“获取模型列表”即可下拉选择。服务不提供列表时可手动填写；列表不一定注明识图能力，请选择支持图片的模型，再点击保存。
 
 耗量按原值除以1000，水位按观测孔深匹配回次止深。空白不补0，模糊行保留候选并标记；缺段、重叠、重复会在问题栏指出。可校对并按孔导出Excel。
 
