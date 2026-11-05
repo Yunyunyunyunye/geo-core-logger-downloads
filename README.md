@@ -8,10 +8,17 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.56.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.56.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.57.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.57.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.56 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.56.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前预览版：[1.57 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.57.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.57 水文报表先选钻孔
+
+- 先从列表选择已有钻孔，或填写新水文孔号后点击“进入钻孔”，再选择照片、识别及导入Excel校对。
+- 进入后显示固定孔号，通过“切换钻孔”或返回重新选择；识别等操作进行中不可切孔，暂停后需等在途结果保存。
+- 列表包含已有编录孔、水文结果及本机照片队列，并显示数量；结果删空后仍能找到原照片队列，切换账号需重新选孔。
+- 安卓1.57（versionCode 58）；手机电脑一起更新，无需新SQL。
 
 ## 1.56 RQD钻孔备忘录
 
