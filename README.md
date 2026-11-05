@@ -8,10 +8,17 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.55.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.55.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.56.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.56.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.55 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.55.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前预览版：[1.56 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.56.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.56 RQD钻孔备忘录
+
+- 进入RQD选择钻孔，展开顶部“本孔备忘录”，支持多行文字。填写后点击“保存备忘录”，离开前请保存；可取消修改，最多20000字。
+- 每孔独立，离线重开可查看，随编录JSON单孔/全部备份及云同步保存；钻孔改名保留，清空RQD岩芯不清备忘录。
+- 旧备份没有备忘录字段时保留现有文字；编辑期间同一份备忘录更新会拒绝旧输入覆盖，保留输入供重新核对。
+- 安卓1.56（versionCode 57）；手机电脑请一起更新，无需新SQL。
 
 ## 1.55 水文问题定位与原地校对
 
