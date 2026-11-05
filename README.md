@@ -8,10 +8,16 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.53.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.53.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.54.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.54.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.53 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.53.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前预览版：[1.54 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.54.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.54 修复重新识图
+
+- 修复删除水文结果后，重新选择原照片直接显示“已完成”却没有结果的问题。旧完成任务在结果删空后恢复为待识别，点击“开始 / 重试未完成”重新调用模型。
+- 已删除记录不再触发识别去重；本孔仍有该照片有效结果时继续避免重复计费，其他孔的数据保留。
+- 安卓版本号提升至1.54（versionCode 55）。两端一起更新，无需运行新的SQL。
 
 ## 1.53 更新与Excel校对
 
