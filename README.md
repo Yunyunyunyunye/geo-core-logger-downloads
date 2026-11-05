@@ -8,10 +8,18 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.54.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.54.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.55.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.55.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.54 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.54.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前预览版：[1.55 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.55.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.55 水文问题定位与原地校对
+
+- 问题栏只显示实际异常，界面和Excel中正常行留空；核对状态单独显示，水位原文独立保留。
+- 当前孔顶部汇总全部问题，点击定位到对应回次；Excel校对导入后重新检查缺段、重叠、孔深错误。
+- 点“校对 / 修改”在当前回次内展开表单，保存或取消后收起，不再跳到底部。
+- Flash提示词增加详细取列规则及三个虚构示例，区分相邻耗量列和两种水位，不确定立即标模糊留空、保留行，不反复猜测或推算。按默认/high准备，保留用户参数；尚未用真实模型测量耗时和准确率变化。
+- 安卓1.55（versionCode 56）。两端一起更新，无需新SQL。
 
 ## 1.54 修复重新识图
 
