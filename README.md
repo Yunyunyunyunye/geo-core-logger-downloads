@@ -8,10 +8,17 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.57.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.57.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.58.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.58.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.57 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.57.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前预览版：[1.58 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.58.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.58 导入入口整理与可收缩侧栏
+
+- “地质资料导入”独立入口，先选孔，再选择Excel并预览确认；可下载原模板，分层/回次深度按米，进尺及岩芯长度按厘米。重复导入按原记录更新，保留原RQD岩芯段和开关，预览期间本孔资料改变会阻止覆盖。
+- 侧栏可收缩并记住本机状态；“导入备份”“云同步与备份”固定在末尾组。未开启RQD的孔默认折叠，以紧凑列表展示，地质导入不再自动开启RQD。
+- “水位变幅”“冲洗液消耗量”维护入口移到“水文报表导入 → 选孔 → 水文绘图资料”，返回保留当前孔；柱状图移除旧编辑入口，原数据继续用于绘图。照片识别结果不自动覆盖绘图资料。
+- 安卓1.58（versionCode 59）；两端一起更新，无需新SQL。
 
 ## 1.57 水文报表先选钻孔
 
