@@ -1,0 +1,2 @@
+188582215adae075f9787dab86c2cb2fa70605c01535ab1e04dac72a105f40a2  geo-core-logger-1.60.0-android.apk
+d820689881cfaf8f671f017cf9fa8b709b75789debf553321895ace9fd719d26  geo-core-logger-1.60.0-x64-portable.exe

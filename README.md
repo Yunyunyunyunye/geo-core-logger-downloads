@@ -8,10 +8,18 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.59.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.59.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.60.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.60.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前预览版：[1.59 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.59.0-beta.1)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前版本：[1.60 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.60.0)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+
+## 1.60 智能地质资料导入与统一设置
+
+- 手机首页、电脑侧栏统一从「设置」管理云同步、备份和多套模型接口。密钥只在会话或安装版加密保险库保存，不进入编录备份与云同步。
+- 地质资料支持 xlsx/xlsm、多工作表和合并表头。选孔、选文件后，首次可用模型识别字段，经预览确认保存规则，同结构文件后续由程序直接提取；可手动修正字段与单位，宏及模型生成的代码均不执行。
+- 整孔长描述可分批精简，保留完整原文和可编辑描述；校验层编号、深度缺段、重叠、重复及孔号冲突，确认后一次性导入，取消或错误不产生半批记录。
+- 回次、岩芯长度和采取率可选择导入；不自动填写 RQD，保留原有开关与岩芯段。旧标准模板、水文照片识别及 Excel 校对继续可用。
+- Android 1.60（versionCode 61）；建议手机与电脑一起更新，无需新 SQL。校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。
 
 ## 1.59 钻孔类型
 
