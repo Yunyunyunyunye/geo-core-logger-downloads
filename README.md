@@ -8,10 +8,19 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.60.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.60.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.64.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.64.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前版本：[1.60 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.60.0)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。
+当前版本：[1.64 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.64.0)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。网页版与安装包同版：[在线使用](https://yunyunyunyunye.github.io/geo-core-logger-pwa/)。
+
+## 1.64 一致性核查与地质描述压缩
+
+- 新增「一致性核查」，先选择钻孔。分层和回次分开比对；孔深、标高、冲洗液、水位和水文来源先统一单位再比较。每一条差异都要人工核对，不会自动覆盖。能对应已保存地质资料的，点「使用地质导入信息」只改这一条。相关数据变化后，原来的核对失效。
+- 地质资料中地层和回次分开提取。只提供止深时，首层、首回次起深为 0，其后缺失的起深取上一条止深。分层采取率按分层岩芯长和层厚计算，回次采取率按回次岩芯长和回次进尺计算，两者不混用。
+- 「压缩地质描述」单独操作。50 字及以内保持原文；超过 50 字才压缩到 50 字左右，只保留岩性、颜色和结构构造，可以舍去水文、工程内容，不得凭空增加。原文保留，压缩结果可预览和编辑。
+- 岩石名称去掉明确的地层代号，源表原名仍保留。记录表描述按实际宽度折行；超过固定行数时明确报出该层，不再静默截断。
+- 清除本孔地质资料需要两次确认，钻孔、水文报表和已有工程、RQD 填写保留。地质资料随编录备份和云同步保存，不含模型密钥。
+- Android 1.64（versionCode 65）。手机、电脑和网页一起更新，无需新 SQL。校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。
 
 ## 1.60 智能地质资料导入与统一设置
 
