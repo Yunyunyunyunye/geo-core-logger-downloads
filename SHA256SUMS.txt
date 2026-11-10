@@ -1,2 +1,2 @@
-5c90353d5575bb14d51e1d6fecdba8086a71f5bf5c28710b1277b6e1957b34c6  geo-core-logger-1.64.0-android.apk
-8c1b242c9fdf84fa688c114eb3f1d9878a17a450bcb4dd24da1e87cae6762313  geo-core-logger-1.64.0-x64-portable.exe
+7a2d67b8114c6eaa88f65b1605379cded445c466c81d9a82e65921714a9ced37  geo-core-logger-1.66.0-android.apk
+05dad2085aa91d38a85b093e0658faa9476a8bcd4a2506450b78f3777d9d2c19  geo-core-logger-1.66.0-x64-portable.exe

@@ -8,10 +8,17 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.64.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.64.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.66.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.66.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前版本：[1.64 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.64.0)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。网页版与安装包同版：[在线使用](https://yunyunyunyunye.github.io/geo-core-logger-pwa/)。
+当前版本：[1.66 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.66.0)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。网页版与安装包同版：[在线使用](https://yunyunyunyunye.github.io/geo-core-logger-pwa/)。
+
+## 1.66 编录小结与描述压缩
+
+- 侧栏新增「编录小结」。先选择钻孔，预览后导出 Word。孔类型、倾角、冲洗液漏失段、溶蚀补充和存在的问题随钻孔保存；孔深、水位、采取率、含水段、软弱段和 RQD 从现有编录计算。
+- 压缩提示词可在导入页修改，并恢复默认。修改只保存在本机，不进入备份或云同步。
+- 50 字及以内的描述不压缩；超过 50 字才压缩到 50 字左右。只压缩原文已有内容，不编造。描述不写岩性，只保留颜色、结构、构造，各项用中文逗号。
+- Android 1.66（versionCode 67）。手机、电脑和网页一起更新，无需新 SQL。校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。
 
 ## 1.64 一致性核查与地质描述压缩
 
