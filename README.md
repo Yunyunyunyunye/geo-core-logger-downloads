@@ -8,10 +8,23 @@
 
 | 设备 | 文件 | 使用方式 |
 | --- | --- | --- |
-| Windows 10/11，64 位 | `geo-core-logger-1.66.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
-| Android 7.0 及以上 | `geo-core-logger-1.66.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
+| Windows 10/11，64 位 | `geo-core-logger-1.71.0-x64-portable.exe` | 免安装，直接运行；记录保存在当前 Windows 用户目录 |
+| Android 7.0 及以上 | `geo-core-logger-1.71.0-android.apk` | 下载到手机后安装；如系统询问，按系统提示授权该来源安装 |
 
-当前版本：[1.66 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.66.0)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。网页版与安装包同版：[在线使用](https://yunyunyunyunye.github.io/geo-core-logger-pwa/)。
+当前版本：[1.71 下载](https://github.com/Yunyunyunyunye/geo-core-logger-downloads/releases/tag/v1.71.0)。无需另装Python、Node.js等开发环境，Windows只提供免安装版。网页版与安装包同版：[在线使用](https://yunyunyunyunye.github.io/geo-core-logger-pwa/)。
+
+## 1.71 水文测耗量取列
+
+- 水文照片识别改为抄写「单位时间测耗量（L/h）」，不再读取最右侧的「单位进尺时间消耗量（L/h·m）」。井深、水位，以及原来除以 1000 的保存方式都不变。
+- 已经识别进软件的旧数字不会自动改，需要把照片重新识别一次。以前导出的 Excel 如果表头还是旧名称，仍然可以导回。
+- Android 1.71（versionCode 72）。手机、电脑和网页一起更新，无需新 SQL。校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。
+
+## 1.70 记录表折行
+
+- 记录表描述按每个符号的实际宽度折行。水文和工程地质描述保持 10.5 磅，不放大也不缩小。岩性名称只有放不下一排时才缩小。
+- 一致性核查可以跳到冲突所在的记录，并选择使用哪一边已经写明的数值。差异不会自动覆盖。
+- 编录小结补上勘查线、坐标、孔口标高、钻孔类型、终孔孔深、岩芯长和全孔采取率。岩性按大类统计，RQD 按长度加权。
+- Android 1.70（versionCode 71）。手机、电脑和网页一起更新，无需新 SQL。
 
 ## 1.66 编录小结与描述压缩
 
